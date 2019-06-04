@@ -19,3 +19,6 @@ spec:
         name: authentication-service
         ports:
         - containerPort: 3000
+        env:
+        - name: ACTIVATION_LINK
+          value: http://localhost/authentication/api/activate

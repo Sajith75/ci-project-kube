@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard-service
+  labels:
+    app: dashboard-sevice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dashboard-service
+  template:
+    metadata:
+      labels:
+        app: dashboard-service
+    spec:
+      containers:
+      - image: docker.io/sajith75/dashboard-service
+        name: dashboard-service
+        ports:
+        - containerPort: 3000

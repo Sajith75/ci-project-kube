@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard-client
+  labels:
+    app: dashboard-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dashboard-client
+  template:
+    metadata:
+      labels:
+        app: dashboard-client
+    spec:
+      containers:
+      - image: docker.io/sajith75/dashboard-client
+        name: dashboard-client
+        ports:
+        - containerPort: 3000

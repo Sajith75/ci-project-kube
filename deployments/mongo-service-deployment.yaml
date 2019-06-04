@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-service
+  labels:
+    app: mongo-sevice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo-service
+  template:
+    metadata:
+      labels:
+        app: mongo-service
+    spec:
+      containers:
+      - image: docker.io/sajith75/mongo-service
+        name: mongo-service
+        ports:
+        - containerPort: 3000

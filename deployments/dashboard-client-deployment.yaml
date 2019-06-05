@@ -18,4 +18,4 @@ spec:
       - image: docker.io/sajith75/dashboard-client
         name: dashboard-client
         ports:
-        - containerPort: 3000
+        - containerPort: 8080

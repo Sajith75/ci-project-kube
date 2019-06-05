@@ -5,8 +5,8 @@ metadata:
 spec:
   selector:
     app: dashboard-client
-  ports:
+  ports:8080
   - protocol: TCP
-    port: 3000
-    targetPort: 3000
+    port: 
+    targetPort: 8080
   type: ClusterIP

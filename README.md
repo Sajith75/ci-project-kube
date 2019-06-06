@@ -38,3 +38,8 @@ access to google cloud platform is also required for this project
 5. The deployment services needs to be restarted after, this can be done by running the commands ```kubectl delete -f deployments``` and ```kubectl apply -f deployments```
 
 6. The login page can now be accessed by going to the external ip followed by /authentication/login.
+
+### Jenkins
+1. Run the Jenkins yaml files using the command ```kubectl apply -f deployments```.
+
+1. Jenkins => A change to the source code on GitHub => triggers a jenkins job using webhooks => Docker images are rebuilt and pushed to Docker hub => Kubernetes pods are updated and run new images.

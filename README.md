@@ -5,4 +5,5 @@ This project will explore to set up a continuous integration pipeline for an app
 connections between the 14 services. (Note: this project builds on a previous project https://github.com/Sajith75/ci-project)
 
 ## Architecture Diagram
-![architecture diagram](
+![architecture diagram](ci-project diagram.png)
+

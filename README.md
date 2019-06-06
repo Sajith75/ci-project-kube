@@ -7,3 +7,18 @@ connections between the 14 services. (Note: this project builds on a previous pr
 ## Architecture Diagram
 ![architecture diagram](ci-project-diagram.png)
 
+## Prerequisites
+The images of the microservices required for this project can be accessed from docker hub:
+* sajith75/mongo-service
+* sajith75/aes-encryption-service
+* sajith75/email-service
+* sajith75/secret-service
+* sajith75/account-service
+* sajith75/session-token-service
+* sajith75/dashboard-service
+* sajith75/authentication-service
+* sajith75/deashboard-client
+* sajith75/authentication-client
+* sajith75/gateway
+* sajith75/role-service
+* sajith75/group-service

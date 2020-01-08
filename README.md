@@ -35,7 +35,7 @@ access to google cloud platform is also required for this project
 
 4. Once the services are running the external ip of the load balancer can be acquired using the command ```kubectl get services```. In the authentication-service-deployment.yaml the localhost part in the ACTIVATION_LINK environment varibale needs to be replaced with the external ip.
 
-5. The deployment services needs to be restarted after, this can be done by running the commands ```kubectl delete -f deployments``` and ```kubectl apply -f deployments```
+5. The deployment services needs to be restarted, this can be done by running the commands ```kubectl delete -f deployments``` and ```kubectl apply -f deployments```
 
 6. The login page can now be accessed by going to the external ip followed by /authentication/login.
 
